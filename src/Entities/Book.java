@@ -13,6 +13,8 @@ public class Book {
         Id=id;
     }
     public Book(String Name,String Author,String Language,double Price,int Count){
+        id++;
+        Id=id;
         name=Name;
         author=Author;
         language=Language;
@@ -20,12 +22,16 @@ public class Book {
         count=Count;
     }
     public int getId(){
-        return Id;
+
+        return this.Id;
     }
     public void fullInfo(){
-        System.out.println(name+" "+author+" "+language+" "+price+" "+count);
+        System.out.println("Id: " + Id );
+        System.out.println("Name: " + name);
+        System.out.println("Author: " + author);
+        System.out.println("Language: " + language);
+        System.out.println("Price: "+ price);
+        System.out.println("Count: "+ count);
+        System.out.println("\n");
     }
-
-
-
 }
